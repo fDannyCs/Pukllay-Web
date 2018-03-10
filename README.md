@@ -1,2 +1,4 @@
 # Pukllay-Web
-Hi everyone, this is a little webpage (only front-end) created for a children. This is only a demo, with a thematic based in Nazca culture, founded 1200 years ago in Ica, southern of Peru. It will have improvements, this is only the first version. =D
+Hi everybody, this is a little webpage created for a children. The thematic is based in Nazca culture from Ica, southern of Peru 1200 years ago.
+I hope you like it and don't worry about the bugs, this was my first webpage created.
+Greetings!
