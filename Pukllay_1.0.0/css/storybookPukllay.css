@@ -1,0 +1,89 @@
+body{
+	background-image: url(../imagenes/fondo-chasqui.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+}
+
+body, body *{
+	z-index: 1;
+}
+
+main{
+	width: 80%;
+	margin: 100px auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+main figure{
+	width: 90%; height: 60%;
+	margin: 0px auto;
+}
+
+main figure img{
+	width: 100%;
+	max-width: 1000px;
+	box-shadow: -2px -2px 5px;
+}
+
+.slidesjs-container{
+	width: 100%;
+	height: 70%;
+	max-height: 480px;
+}
+
+.slidesjs-pagination{
+	display: none;
+}
+
+.slidesjs-previous, .slidesjs-next{
+	/*background-color: rgba(92, 171, 197, 0.8);*/
+	text-decoration: none;
+	font-family: "Skranji", "ABeeZee";
+	font-size: 1.45em;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.slidesjs-previous{
+	float: left;
+}
+
+.slidesjs-next{
+	float: right;
+}
+
+.slidesjs-previous:hover, .slidesjs-next:hover{
+	text-decoration: underline;
+}
+main #goCap2{
+	width: 25%; height: 100%;
+	background-color: rgba(92, 171, 197, 0.8);
+	border-style: solid;
+	border-radius: 5px;
+	border-color: rgb(0, 0, 0);
+	margin: auto;
+	order: 2;
+}
+
+#goCap2 a{
+	display: block;
+	font-family: "Skranji", "ABeeZee";
+ 	text-decoration: none;
+ 	color: rgba(255, 255, 255, 0.8);
+ 	font-size: 1.65em;
+ 	text-align: center;
+ }
+
+ main #goCap2:hover{
+ 	transform: scale(0.8);
+ 	cursor: pointer;
+ }
+
+/*footer{
+ 	position: relative;
+ 	top: 100%;
+}*/

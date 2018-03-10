@@ -1,0 +1,148 @@
+/*
+---CARACTERÍSTICAS GENERALES---
+*/
+
+body{
+	height: 180vh;
+	background-image: url(../imagenes/fondoLanding.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+
+body *{
+	font-family: "ABeeZee", "Skranji";
+	box-sizing: border-box;
+}
+
+main, #pedirInfo{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+main{
+	height: 100vh;
+	position: relative;
+	order: 1;
+}
+
+/* FIN GENERALES */
+
+
+
+
+
+/*
+---TRABAJANDO CON LA PRESENTACIÓN---
+*/
+
+main #presentacion{
+	width: 50%; height: 50%;
+	background-color: rgba(255, 255, 255, 0.7);
+	margin: auto;
+	align-self: center;
+	padding: 2%;
+}
+
+#presentacion p{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+#presentacion p a{
+	color: rgba(0, 0, 0, 1);
+	font-weight: bold;
+	text-decoration: none;
+	font-family: "ABeeZee-Italic";
+}
+
+#presentacion p a:hover{
+	text-decoration: underline;
+}
+
+/* FIN PRESENTACIÓN */
+
+
+
+
+
+/*
+---TRABAJANDO CON EL MINI FORM---
+*/
+
+#pedirInfo{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 80vh;
+	order: 2;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	transition: all 0.5s;
+}
+
+#pedirInfo p, #pedirInfo form{
+	margin: 2% auto;
+} 
+
+#pedirInfo p{
+	text-align: center;
+	font-size: 1.5em;
+	display: block;
+	order: 1;
+}
+
+#pedirInfo form{
+	width: 50%;
+	height: 50%;
+	order: 2;
+}
+
+#pedirInfo input{
+	width: 50%;
+	padding: 5px;
+	font-size: 1.15em;
+	display: block;
+	margin: 3% auto;
+}
+
+#pedirInfo input[type="submit"]{
+	width: 20%;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(92, 171, 197, 1);
+	border-style: none;
+	border-radius: 5px;
+	border-width: 3px;
+	cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 975px){
+	main #presentacion{
+		padding: 0.7%;
+		overflow-y: auto;
+	}
+	#pedirInfo input[type="submit"]{
+		width: 40%
+	}
+}
+
+
+@media screen and (max-width: 599px){
+	#pedirInfo input{
+		width: 100%;
+	}
+	#pedirInfo input[type="submit"]{
+		width: 80%;
+	}
+	main #presentacion{
+		padding: 0.2%;
+		overflow-y: auto;
+	}
+}

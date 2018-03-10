@@ -1,0 +1,128 @@
+body{
+	width: 100%; height: 100vh;
+	max-width: 100%;
+	background-image: url(../imagenes/fondo-index.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+main{
+	width: 25%; height: 75%;
+	padding: auto;
+	align-self: center;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+}
+
+main #munecoPukllay, #munecoPukllay img{
+	width: 100%;
+}
+
+main #munecoPukllay{
+	height: 75%;
+	display: flex;
+	margin: 8% auto 3% auto;
+	order: 1;
+}
+
+#munecoPukllay img{
+	height: 100%;
+}
+
+main #btnsComenzar{
+	margin-top: 3%;
+	margin-bottom: 8%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	height: 25%;
+	order: 2;
+}
+
+#btnsComenzar #btnIniciar, #btnsComenzar #btnRegistro{
+	width: 50%; height: 42%;
+	display: flex;
+	align-items: center;
+	margin: 3% auto;
+}
+
+#btnsComenzar #btnIniciar{
+	order: 1;
+}
+
+#btnsComenzar #btnRegistro{
+	order: 2;
+}
+
+#btnIniciar a, #btnRegistro a{
+	display: block;
+	width: 100%; height: 100%;
+	font-family: "ABeeZee", "Skranji";
+	font-size: 1.5em;
+	text-align: center;
+	align-self: center;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 1);
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 1);
+	border-radius: 5px;
+	line-height: 5vh;
+}
+
+
+@media screen and (min-width: 550px) and (max-width: 1000px){
+	main{
+		width: 35%;
+	}
+	main #munecoPukllay{
+		height: 60%;
+	}
+	#btnsComenzar #btnIniciar, #btnsComenzar #btnRegistro{
+		width: 60%;
+	}
+	#btnIniciar a, #btnRegistro a{
+		font-size: 1.25em;
+		line-height: 6.5vh;
+	}
+}
+
+@media screen and (min-width: 375px) and (max-width: 550px){
+	main{
+		width: 50%;
+		height: 65%;
+	}
+	main #munecoPukllay{
+		margin-top: 15%;
+		height: 60%;
+	}
+	#btnsComenzar #btnIniciar, #btnsComenzar #btnRegistro{
+		width: 55%;
+	}
+	#btnIniciar a, #btnRegistro a{
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 375px){
+	main{
+		width: 50%;
+		height: 65%;
+	}
+	main #munecoPukllay{
+		margin-top: 15%;
+		height: 60%;
+	}
+	#btnsComenzar #btnIniciar, #btnsComenzar #btnRegistro{
+		width: 55%;
+	}
+	#btnIniciar a, #btnRegistro a{
+		font-size: 1em;
+	}
+}

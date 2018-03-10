@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Pukllay">
+	<meta name="application-name" content="Pukllay">
+	<meta name="keywords" content="Pukllay, educativa, plataforma, niños, aprender, juegos, diversion">
+	<meta name="description" content="Pukllay es una plataforma educativa creada para los niños, quienes aprenderán de forma didáctica y divertida.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/generalProperties.css">
+	<link rel="stylesheet" type="text/css" href="css/headerPukllay.css">
+	<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
+	<link rel="stylesheet" type="text/css" href="css/styleFooter.css">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="shortcut icon" href="imagenes/favicon.ico">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/pace.min.js"></script>
+	<link rel="stylesheet" href="templates/pace-theme-corner-indicator.tmpl.css">
+	<title>Bienvenidos a Pukllay</title>
+</head>
+<body>
+	<header id="cabeceraPukllay">
+		<div id="logoPukllay">
+			<img src="imagenes/pukllay-1.png" alt="Logo de Pukllay">
+		</div>
+		<nav id="navPukllay">
+			<input type="checkbox" name="botonMenu" id="botonMenu">
+			<label for="botonMenu"><span class="icon-list"></span></label>
+			<ul id="barraNavPukllay">
+				<li><a href="nosotrosPukllay.html">Nosotros</a></li>
+				<li><a href="landingPukllay.html">Suscríbete</a></li>
+				<li><a href="#">Contenido</a>
+					<ul>
+						<li><a href="storybookPukllay.html">Storybook</a></li>
+						<li><a href="prontoPukllay.html">Juegos</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div id="munecoPukllay">
+			<img src="imagenes/logoPukllay.png" alt="Imagen de Pukllay">
+		</div>
+		<div id="btnsComenzar">
+			<div id="btnIniciar">
+				<a href="#">Ingresar</a>
+			</div>
+			<div id="btnRegistro">
+				<a href="#">Regístrate</a>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<section id="contacto">
+			<a href="https://www.facebook.com/Pukllay-112687628768139/" target="_blank"><span class="icon-facebook"></span></a>
+			<a href="https://www.instagram.com/pukllayperu/" target="_blank"><span class="icon-instagram"></span></a>
+			<a href="landingPukllay.html"><span class="icon-mail"></span></a>
+		</section>
+		<section id="teclaSonido">
+			<input type="checkbox" name="sound" id="soundButton" checked><label for="soundButton"><span class="icon-sound" id="indicaSonido"></span></label>
+		</section>
+	</footer>
+	<audio id="audioEntrada">
+		<source src="fondoInca.mp3">
+	</audio>
+	<script src="js/accionSonido.js"></script>
+</body>
+</html>

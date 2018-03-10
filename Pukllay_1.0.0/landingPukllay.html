@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Pukllay">
+	<meta name="application-name" content="Pukllay">
+	<meta name="description" content="Aquí recibirás toda la información sobre Pukllay.">
+	<meta name="keywords" content="Pukllay, educativa, plataforma, niños, aprender">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/generalProperties.css">
+	<link rel="stylesheet" href="css/headerPukllay.css">
+	<link rel="stylesheet" href="css/landingPukllay.css">
+	<link rel="stylesheet" href="css/styleFooter.css">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="shortcut icon" href="imagenes/favicon.ico">
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/pace.min.js"></script>
+	<link rel="stylesheet" href="templates/pace-theme-corner-indicator.tmpl.css">
+	<title>Pukllay es...</title>
+</head>
+<body>
+	<header id="cabeceraPukllay">
+		<div id="logoPukllay">
+			<img src="imagenes/pukllay-1.png" alt="Logo de Pukllay">
+		</div>
+		<nav id="navPukllay">
+			<input type="checkbox" name="botonMenu" id="botonMenu">
+			<label for="botonMenu"><span class="icon-list"></span></label>
+			<ul id="barraNavPukllay">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="nosotrosPukllay.html">Nosotros</a></li>
+				<li><a href="#">Contenido</a>
+					<ul>
+						<li><a href="storybookPukllay.html">Storybook</a></li>
+						<li><a href="prontoPukllay.html">Juegos</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="presentacion">
+			<p>Pukllay es una plataforma que ofrece juegos entretenidos y educativos para estimular y reforzar el aprendizaje del niño. Un lugar donde la cultura Nazca toma importante protagonismo.</p><br/>
+			<p>Brindamos un espacio en donde el juego y el aprendizaje van de la mano.</p><br/>
+			<p>Para mayor información <a href="#pedirInfo">¡Suscríbete!</a></p>
+		</section>
+	</main>
+	<div id="pedirInfo">
+		<p>Para recibir cualquier novedad, ¡suscríbete aquí!</p>
+		<form action="enviarCorreo.php" method="post">
+			<input type="text" name="nombre" id="nombre" placeholder="Nombres" required>
+			<input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+			<input type="submit" name="enviar" value="Suscribir">
+		</form>
+	</div>
+	<footer>
+		<section id="contacto">
+			<a href="https://www.facebook.com/Pukllay-112687628768139/" target="_blank"><span class="icon-facebook"></span></a>
+			<a href="https://www.instagram.com/pukllayperu/" target="_blank"><span class="icon-instagram"></span></a>
+			<a href="index.html"><span class="icon-home"></span></a>
+		</section>
+		<section id="teclaSonido">
+			<input type="checkbox" name="sound" id="soundButton" checked><label for="soundButton"><span class="icon-sound" id="indicaSonido"></span></label>
+		</section>
+	</footer>
+	<audio id="audioEntrada">
+		<source src="fondoInca.mp3">
+	</audio>
+	<script src="js/accionSonido.js"></script>
+	<script src="js/headerPukllay.js"></script>
+	<script src="js/botonSuscribete.js"></script>
+</body>
+</html>
